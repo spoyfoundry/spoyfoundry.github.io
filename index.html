@@ -3,15 +3,11 @@ layout: default
 title: Spoy Studio
 ---
 
-
 <main class="home">
   <img class="logo" src="./img/logo.svg"/>
   <div class="message">
     <div class="center">
-      <!-- <p class="pre-heading">
-        WE CRAFT
-      </p> -->
-      <h3 class="heading"></h3>
+      <h2 class="heading"></h2>
     </div>
   </div>
   <div class="cta">
@@ -26,8 +22,9 @@ title: Spoy Studio
     </a>
   </div>
 </main>
+
 <script>
-  $(function(){
+  (function(){
       $(".heading").typed({
         strings: [
           "DESIGN",
@@ -45,7 +42,7 @@ title: Spoy Studio
         shuffle: true,
         showCursor: false,
         backSpeed: 0,
-        backDelay: 2000
+        backDelay: 3000
       });
-  });
+  })( jQuery );
 </script>

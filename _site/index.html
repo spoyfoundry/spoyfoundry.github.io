@@ -6,20 +6,17 @@
         <title>Spoy Studio</title>
         <meta name="viewport" content="width=device-width">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/main.css">
-        <script async type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script async type="text/javascript" src="/js/typed.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/typed.min.js"></script>
     </head>
     <body>
       <main class="home">
   <img class="logo" src="./img/logo.svg"/>
   <div class="message">
     <div class="center">
-      <!-- <p class="pre-heading">
-        WE CRAFT
-      </p> -->
-      <h3 class="heading"></h3>
+      <h2 class="heading"></h2>
     </div>
   </div>
   <div class="cta">
@@ -34,8 +31,9 @@
     </a>
   </div>
 </main>
+
 <script>
-  $(function(){
+  (function(){
       $(".heading").typed({
         strings: [
           "DESIGN",
@@ -53,9 +51,9 @@
         shuffle: true,
         showCursor: false,
         backSpeed: 0,
-        backDelay: 2000
+        backDelay: 3000
       });
-  });
+  })( jQuery );
 </script>
 
     </body>
