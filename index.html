@@ -6,18 +6,46 @@ title: Spoy Studio
 
 <main class="home">
   <img class="logo" src="./img/logo.svg"/>
-  <div class="home-content">
-    <p class="home-desc">
-      We are a small team of creatives who loves to solve big problems.
-      <br/>
-      Together, we can craft
-    </p>
-    <h3 class="heading">
-      EXPERIENCE
-    </h3>
+  <div class="message">
+    <div class="center">
+      <!-- <p class="pre-heading">
+        WE CRAFT
+      </p> -->
+      <h3 class="heading"></h3>
+    </div>
+  </div>
+  <div class="cta">
     <p class="cta-question">
+      We are a small team of creatives who <span>dare</span> to solve big problems.
+      <br/>
       Have a project in mind?
     </p>
-    <a href="mailto:spoyfoundry@gmail.com" class="cta-button">Get a Quote</a>
+    <a href="mailto:spoyfoundry@gmail.com" class="cta-button">
+      <i class="icon ion-android-mail"></i>
+      Talk to a Creator
+    </a>
   </div>
 </main>
+<script>
+  $(function(){
+      $(".heading").typed({
+        strings: [
+          "DESIGN",
+          "VIDEO",
+          "EXPERIENCE",
+          "AR",
+          "WEBSITE",
+          "APPS",
+          "ANIMATION",
+          "BRANDING"
+        ],
+        typeSpeed: 100,
+        startDelay: 500,
+        loop: true,
+        shuffle: true,
+        showCursor: false,
+        backSpeed: 0,
+        backDelay: 2000
+      });
+  });
+</script>
