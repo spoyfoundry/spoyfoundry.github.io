@@ -33,10 +33,19 @@ a:hover {
 a:visited {
   color: #a0a; }
 
+::-moz-selection {
+  color: #fff;
+  background: #000; }
+
+::selection {
+  color: #fff;
+  background: #000; }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #111; }
 
 .home {
   display: -ms-flexbox;
@@ -50,10 +59,10 @@ a:visited {
   height: 100vh;
   -ms-flex-direction: column;
       flex-direction: column;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Rubik', sans-serif; }
   .home .logo {
-    height: 80px;
-    margin-top: 80px;
+    height: 50px;
+    margin-top: 100px;
     width: auto; }
   .home .message {
     -ms-flex: 1;
@@ -73,10 +82,10 @@ a:visited {
         font-size: 15rem;
         margin: 0;
         padding: 0;
-        font-weight: 900;
+        font-weight: 700;
         display: inline-block; }
       .home .message .center .typed-cursor {
-        font-size: 18rem;
+        font-size: 16rem;
         opacity: 1;
         -webkit-animation: blink 0.7s infinite;
         animation: blink 0.7s infinite; }
@@ -96,26 +105,17 @@ a:visited {
     opacity: 0; }
   100% {
     opacity: 1; } }
-      .home .message .center .home-desc {
-        font-size: 22px;
-        color: #666;
-        margin: 0;
-        line-height: 38px;
-        font-weight: 100;
-        margin-top: 50px; }
   .home .cta {
     text-align: center;
-    height: 240px;
+    height: 260px;
     padding: 30px; }
-    .home .cta .cta-question {
-      font-size: 22px;
-      color: #666;
+    .home .cta .cta-text {
+      font-size: 20px;
+      color: #111;
       margin: 0;
       line-height: 38px;
-      font-weight: 100;
+      font-weight: 300;
       margin-bottom: 30px; }
-      .home .cta .cta-question span {
-        font-weight: 700; }
     .home .cta .cta-button {
       background: #004EFF;
       background: #0088ff;
@@ -131,10 +131,13 @@ a:visited {
       padding: 0 50px;
       border-radius: 30px;
       font-size: 18px;
-      font-weight: 100; }
+      font-weight: 300; }
       .home .cta .cta-button .icon {
         margin-right: 10px;
-        margin-left: -10px; }
+        margin-left: -10px;
+        vertical-align: middle;
+        font-size: 40px;
+        color: #fff; }
       .home .cta .cta-button:hover {
         background: #004EFF; }
 
@@ -173,7 +176,7 @@ a:visited {
 
 @media screen and (min-width: 720px) and (max-width: 767px) {
   .home .logo {
-    height: 80px; }
+    height: 50px; }
   .home .message .center .heading {
     font-size: 90px; }
   .home .message .center .typed-cursor {
@@ -184,33 +187,33 @@ a:visited {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .home .logo {
-    height: 80px; }
+    height: 50px; }
   .home .message .center .heading {
     font-size: 90px; }
   .home .message .center .typed-cursor {
     font-size: 100px; }
   .home .cta .cta-question {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px; } }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .home .logo {
-    height: 80px; }
+    height: 50px; }
   .home .message .center .heading {
     font-size: 130px; }
   .home .message .center .typed-cursor {
     font-size: 140px; }
   .home .cta .cta-question {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px; } }
 
 @media screen and (min-width: 1280px) and (max-width: 1599px) {
   .home .logo {
-    height: 80px; }
+    height: 50px; }
   .home .message .center .heading {
     font-size: 160px; }
   .home .message .center .typed-cursor {
     font-size: 170px; }
   .home .cta .cta-question {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px; } }
