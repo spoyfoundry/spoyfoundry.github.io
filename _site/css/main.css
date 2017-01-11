@@ -35,17 +35,17 @@ a:visited {
 
 ::-moz-selection {
   color: #fff;
-  background: #000; }
+  background: #000000; }
 
 ::selection {
   color: #fff;
-  background: #000; }
+  background: #000000; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #111; }
+  color: #000; }
 
 .home {
   display: -ms-flexbox;
@@ -59,7 +59,7 @@ a:visited {
   height: 100vh;
   -ms-flex-direction: column;
       flex-direction: column;
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
   .home .logo {
     height: 50px;
     margin-top: 100px;
@@ -77,12 +77,12 @@ a:visited {
     .home .message .center {
       -ms-flex: 1;
           flex: 1;
-      min-height: 0px; }
+      min-height: 0; }
       .home .message .center .heading {
-        font-size: 15rem;
+        font-size: 200px;
         margin: 0;
         padding: 0;
-        font-weight: 700;
+        font-weight: 900;
         display: inline-block; }
       .home .message .center .typed-cursor {
         font-size: 16rem;
@@ -118,10 +118,6 @@ a:visited {
       margin-bottom: 30px; }
     .home .cta .cta-button {
       background: #004EFF;
-      background: #0088ff;
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, #0088ff), color-stop(100%, #004eff));
-      background: linear-gradient(to bottom, #0088ff 0%, #004eff 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088ff', endColorstr='#004eff', GradientType=0 );
       color: #fff;
       height: 50px;
       width: auto;
@@ -139,7 +135,9 @@ a:visited {
         font-size: 40px;
         color: #fff; }
       .home .cta .cta-button:hover {
-        background: #004EFF; }
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+        box-shadow: 0 20px 24px -12px rgba(0, 0, 0, 0.3); }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .home .logo {

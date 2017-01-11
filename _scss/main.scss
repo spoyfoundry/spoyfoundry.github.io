@@ -2,14 +2,16 @@
 
 ::selection {
   color: #fff;
-  background: #000;
+  background: #000000;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #111;
+  color: #000;
 }
+
 .home {
   display: flex;
   justify-content: center;
@@ -18,7 +20,7 @@
   margin: 0 auto;
   height: 100vh;
   flex-direction: column;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
   .logo {
     height: 50px;
@@ -35,41 +37,63 @@
 
     .center {
       flex: 1;
-      min-height: 0px;
+      min-height: 0;
 
       .heading {
-        font-size: 15rem;
+        font-size: 200px;
         margin: 0;
         padding: 0;
-        font-weight: 700;
+        font-weight: 900;
         display: inline-block;
       }
 
-      .typed-cursor{
+      .typed-cursor {
         font-size: 16rem;
         opacity: 1;
         -webkit-animation: blink 0.7s infinite;
         -moz-animation: blink 0.7s infinite;
         animation: blink 0.7s infinite;
       }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
 
-      @keyframes blink{
-          0% { opacity:1; }
-          50% { opacity:0; }
-          100% { opacity:1; }
+        50% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
       }
-      @-webkit-keyframes blink{
-          0% { opacity:1; }
-          50% { opacity:0; }
-          100% { opacity:1; }
+      @-webkit-keyframes blink {
+        0% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
       }
-      @-moz-keyframes blink{
-          0% { opacity:1; }
-          50% { opacity:0; }
-          100% { opacity:1; }
+      @-moz-keyframes blink {
+        0% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
       }
     }
-
   }
 
   .cta {
@@ -84,21 +108,13 @@
       line-height: 38px;
       font-weight: 300;
       margin-bottom: 30px;
-
       // span {
       //   font-weight: 700;
       // }
     }
+
     .cta-button {
       background: #004EFF;
-      background: rgba(0,136,255,1);
-      background: -moz-linear-gradient(top, rgba(0,136,255,1) 0%, rgba(0,78,255,1) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,136,255,1)), color-stop(100%, rgba(0,78,255,1)));
-      background: -webkit-linear-gradient(top, rgba(0,136,255,1) 0%, rgba(0,78,255,1) 100%);
-      background: -o-linear-gradient(top, rgba(0,136,255,1) 0%, rgba(0,78,255,1) 100%);
-      background: -ms-linear-gradient(top, rgba(0,136,255,1) 0%, rgba(0,78,255,1) 100%);
-      background: linear-gradient(to bottom, rgba(0,136,255,1) 0%, rgba(0,78,255,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088ff', endColorstr='#004eff', GradientType=0 );
       color: #fff;
       height: 50px;
       width: auto;
@@ -119,183 +135,191 @@
       }
 
       &:hover {
-        background: #004EFF;
+        transform: translateY(-5px);
+        box-shadow: 0 20px 24px -12px rgba(0,0,0,.3);
       }
     }
   }
 }
-
 @media screen and (min-width: 320px) and (max-width: 374px) {
-    .home {
-      .logo {
-        height: 40px;
-      }
-      .message {
-        .center {
-          .heading {
-            font-size: 42px;
-          }
-          .typed-cursor{
-            font-size: 52px;
-          }
-        }
-      }
+  .home {
+    .logo {
+      height: 40px;
+    }
 
-      .cta {
-        .cta-question {
-          font-size: 18px;
-          line-height: 28px;
+    .message {
+      .center {
+        .heading {
+          font-size: 42px;
+        }
+
+        .typed-cursor {
+          font-size: 52px;
         }
       }
     }
-}
 
+    .cta {
+      .cta-question {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 413px) {
-    .home {
-      .logo {
-        height: 50px;
-      }
-      .message {
-        .center {
-          .heading {
-            font-size: 52px;
-          }
-          .typed-cursor{
-            font-size: 62px;
-          }
-        }
-      }
+  .home {
+    .logo {
+      height: 50px;
+    }
 
-      .cta {
-        .cta-question {
-          font-size: 18px;
-          line-height: 28px;
+    .message {
+      .center {
+        .heading {
+          font-size: 52px;
+        }
+
+        .typed-cursor {
+          font-size: 62px;
         }
       }
     }
-}
 
+    .cta {
+      .cta-question {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 414px) and (max-width: 719px) {
-    .home {
-      .logo {
-        height: 50px;
-      }
-      .message {
-        .center {
-          .heading {
-            font-size: 60px;
-          }
-          .typed-cursor{
-            font-size: 70px;
-          }
-        }
-      }
+  .home {
+    .logo {
+      height: 50px;
+    }
 
-      .cta {
-        .cta-question {
-          font-size: 18px;
-          line-height: 28px;
+    .message {
+      .center {
+        .heading {
+          font-size: 60px;
+        }
+
+        .typed-cursor {
+          font-size: 70px;
         }
       }
     }
-}
 
+    .cta {
+      .cta-question {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 720px) and (max-width: 767px) {
-    .home {
-      .logo {
-        height: 50px;
-      }
-      .message {
-        .center {
-          .heading {
-            font-size: 90px;
-          }
-          .typed-cursor {
-            font-size: 100px;
-          }
-        }
-      }
+  .home {
+    .logo {
+      height: 50px;
+    }
 
-      .cta {
-        .cta-question {
-          font-size: 18px;
-          line-height: 28px;
+    .message {
+      .center {
+        .heading {
+          font-size: 90px;
+        }
+
+        .typed-cursor {
+          font-size: 100px;
         }
       }
     }
-}
 
+    .cta {
+      .cta-question {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .home {
-      .logo {
-        height: 50px;
-      }
-      .message {
-        .center {
-          .heading {
-            font-size: 90px;
-          }
-          .typed-cursor{
-            font-size: 100px;
-          }
-        }
-      }
+  .home {
+    .logo {
+      height: 50px;
+    }
 
-      .cta {
-        .cta-question {
-          font-size: 20px;
-          line-height: 28px;
+    .message {
+      .center {
+        .heading {
+          font-size: 90px;
+        }
+
+        .typed-cursor {
+          font-size: 100px;
         }
       }
     }
-}
 
+    .cta {
+      .cta-question {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    .home {
-      .logo {
-        height: 50px;
-      }
-      .message {
-        .center {
-          .heading {
-            font-size: 130px;
-          }
-          .typed-cursor{
-            font-size: 140px;
-          }
-        }
-      }
+  .home {
+    .logo {
+      height: 50px;
+    }
 
-      .cta {
-        .cta-question {
-          font-size: 20px;
-          line-height: 28px;
+    .message {
+      .center {
+        .heading {
+          font-size: 130px;
+        }
+
+        .typed-cursor {
+          font-size: 140px;
         }
       }
     }
+
+    .cta {
+      .cta-question {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
 }
-
 @media screen and (min-width: 1280px) and (max-width: 1599px) {
-    .home {
-      .logo {
-        height: 50px;
-      }
-      .message {
-        .center {
-          .heading {
-            font-size: 160px;
-          }
-          .typed-cursor{
-            font-size: 170px;
-          }
-        }
-      }
+  .home {
+    .logo {
+      height: 50px;
+    }
 
-      .cta {
-        .cta-question {
-          font-size: 20px;
-          line-height: 28px;
+    .message {
+      .center {
+        .heading {
+          font-size: 160px;
+        }
+
+        .typed-cursor {
+          font-size: 170px;
         }
       }
     }
+
+    .cta {
+      .cta-question {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
 }
